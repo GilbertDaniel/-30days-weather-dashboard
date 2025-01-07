@@ -31,7 +31,16 @@ This Weather Dashboard application fetches real-time weather data from the OpenW
    pip install -r requirements.txt
    ```
 
-3. **Set Up Environment Variables**:
+3. **Configure AWS**:
+
+ ```bash
+aws configure
+```
+- Put the Access Key ID and press enter
+- Put the secret access key also and press enter
+- Leave others as default by pressing Enter
+
+4. **Set Up Environment Variables**:
    - Create a `.env` file in the project directory.
    - Add the following variables:
      ```env
@@ -39,7 +48,7 @@ This Weather Dashboard application fetches real-time weather data from the OpenW
      S3_BUCKET_NAME=your_s3_bucket_name
      ```
 
-4. **Run the Application**:
+5. **Run the Application**:
    ```bash
    python src/weather_dashboard.py
    ```
